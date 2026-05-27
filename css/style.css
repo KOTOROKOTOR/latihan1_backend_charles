@@ -1,0 +1,22 @@
+.btn{
+    background-color: rgb(131, 84, 57);
+    color: white;
+}
+.btn:hover{
+    background: #6b3f2a;
+    color: white;
+}
+header {
+    background-color: rgb(131, 84, 57);
+    color: white;
+    height: 200px;
+}
+body {
+    background-color: rgb(216, 216, 216);
+}
+.card{
+ background-color: white;
+}
+.prog{
+    margin-top: 10px;
+}
