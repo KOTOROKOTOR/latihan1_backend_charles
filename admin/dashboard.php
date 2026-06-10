@@ -1,18 +1,10 @@
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
- header("Location: ../login.php");
- exit;
-}
+include "security.php";
+echo "welcome, ".$username;
 ?>
-<!DOCTYPE html>
-<html>
-<head>
- <title>Dashboard</title>
-</head>
-<body>
-<h2>Dashboard</h2>
-<p>Selamat datang, <?php echo $_SESSION['username']; ?></p>
-<a href="logout.php">Logout</a>
-</body>
-</html>
+<br>
+<a href="courses/index.php">manajemen kelas</a>
+<br>
+<a href="registrations/index.php">manajemen pendaftaran</a>
+<br>
+<a href="logout.php">logout</a>

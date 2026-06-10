@@ -10,3 +10,6 @@ include 'header.php';
     </form>
     
 </section>
+<script>
+alert('The password you have entered is incorrect. Please try again.');
+</script>

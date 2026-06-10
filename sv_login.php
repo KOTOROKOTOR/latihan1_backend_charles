@@ -10,13 +10,13 @@ $num=mysqli_num_rows($query);
 
 if($num>0){
     $_SESSION['username']=$username;
+    echo "<script>alert('Form submitted successfully!');</script>";
+
     header("Location: admin/dashboard.php");
     exit;
 }else{
+    echo "<script>alert('The password you have entered is incorrect. Please try again.');</script>";
     header("Location: login.php");
     exit;
 }
 ?>
-<script>
-
-</script>
